@@ -21,6 +21,14 @@ def check():
         print(" [+] Valid token, gathering information..")
 check()
 
+def nitro_check():
+    if data['premium_type'] == 1:
+        print(f" [-] Premium Type: Nitro Classic ($5)")
+    elif data['premium_type'] == 2:
+        print(f" [-] Premium Type: Nitro ($10)")
+    else:
+        print(f" [-] No Nitro :(")
+
 def acc_info():
     print(f"\n [-] User: {data['username']}#{data['discriminator']} - {data['id']}")
     if data['verified'] == True:
@@ -32,4 +40,5 @@ def acc_info():
         print(f" [-] Phone Number: N/A")
     else:
         print(f" [-] Phone Number: {data['phone']}")
+    nitro_check()
 acc_info()
