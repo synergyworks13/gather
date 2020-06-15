@@ -29,3 +29,5 @@ python3 gather.py
  [-] 2FA: False
  [-] Phone Number: +1[redacted]
 ```
+
+~ valentine
